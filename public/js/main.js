@@ -11,11 +11,13 @@ $(document).ready(function() {
     var result;
     switch(outType) {
       case 'png':
-        result = '<img src="' + url + '"></img>';
-        $('#result').html(result + "<br> 链接：" + url);
+        // result = '<img src="' + url + '"></img>';
+        result = '该选项暂不支持，请看右侧说明。';
+        // $('#result').html(result + "<br> 链接：" + url);
+        $('#result').html(result);
         break;
       case 'svg':
-        result = '<embed src="'+ url + '" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" />';
+        result = '<embed src="'+ url + '" type="image/svg+xml" style="min-width:2em;" pluginspage="http://www.adobe.com/svg/viewer/install/" />';
         $('#result').html(result + "<br> 链接：" + url);
         break;
       case 'mml':
