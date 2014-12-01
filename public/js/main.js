@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('#result').html(result);
         break;
       case 'svg':
-        result = '<embed src="'+ url + '" type="image/svg+xml" style="min-width:2em;" pluginspage="http://www.adobe.com/svg/viewer/install/" />';
+        result = '<img src="'+ url + '">';
         $('#result').html(result + "<br> svg 资源链接：" + url);
         break;
       case 'mml':
