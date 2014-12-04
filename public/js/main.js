@@ -17,7 +17,7 @@ $(document).ready(function() {
         $('#result').html(result);
         break;
       case 'svg':
-        result = '<img src="'+ url + '">';
+        result = '<object data="'+ url + '" type="image/svg+xml"></object>';
         $('#result').html(result + "<br> svg 资源链接：" + url);
         break;
       case 'mml':
