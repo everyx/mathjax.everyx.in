@@ -73,7 +73,6 @@ func mathJaxHandler(res http.ResponseWriter, params martini.Params) string {
 
 func main() {
 	m := martini.Classic()
-	m.Get("/", http.StripPrefix("/", http.FileServer(http.Dir("/public"))))
 	m.Get("/:expressionType/:outType/:expression", mathJaxHandler)
 	m.Run()
 }
